@@ -1,0 +1,18 @@
+/** 
+ * In this exercise, a string is passed to a method 
+ * and a new string has to be returned with the first character 
+ * of each word in the string
+ * example 1: makeString("The community at Code States might be the biggest asset"); => "TcaCSmbtba"
+ */
+
+var makeString = function(s) {
+  // Your code here
+  var ret="";
+  var dd=s.split(" ");
+  for (var i=0;i<dd.length;++i){
+    ret+=dd[i][0];
+  }
+  return ret;
+}
+
+makeString("The community at Code States might be the biggest asset");
